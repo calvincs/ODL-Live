@@ -1,0 +1,32 @@
+{
+  "name": "ODL-Live",
+  "version": "1.0.0",
+  "description": "ODL (On Demand Liquidity) tracking live between exchanges and the XRP ledger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "eslint --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calvincs/ODL-Live.git"
+  },
+  "author": "Calvin Schultz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/calvincs/ODL-Live/issues"
+  },
+  "homepage": "https://github.com/calvincs/ODL-Live#readme",
+  "dependencies": {
+    "cli-color": "^1.4.0",
+    "js-yaml": "^3.13.1",
+    "node-fetch": "^2.6.0",
+    "rippled-ws-client": "^1.0.0",
+    "winston": "^3.2.1",
+    "ws": "^7.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}

@@ -1,0 +1,85 @@
+#Server to connect to for XRP Ledger data
+xrpledger:
+    server: wss://s2.ripple.com
+
+#Exchange servers
+bitso:
+    server: wss://ws.bitso.com
+
+bitstamp:
+    server: wss://ws.bitstamp.net
+    priceTicker: https://www.bitstamp.net/api/v2/ticker/xrpusd/
+
+bithomp:
+    userinfo: https://bithomp.com/api/v1/userinfo
+
+coinsph:
+    server: wss://api-cx.coins.asia/ws-api/
+
+btcmarkets:
+    server: wss://socket.btcmarkets.net/v2
+
+mercado:
+    server: https://www.mercadobitcoin.net
+    orderbook: https://www.mercadobitcoin.net/api/XRP/orderbook/
+    trades: https://www.mercadobitcoin.net/api/XRP/trades/
+
+bittrex:
+    server: https://api.bittrex.com
+    trades: https://api.bittrex.com/api/v1.1/public/getmarkethistory?market=USD-XRP
+    orderbook: https://api.bittrex.com/api/v1.1/public/getorderbook?market=USD-XRP&type=both
+
+#Logging Setttings
+logging:
+    logPath: odl-live.log
+    logLevel: info
+    maxSize: 5242880
+    maxFiles: 5
+    colorize: true
+
+#Stats backupfile
+statsbackup:
+    filePath: statslog.json
+
+exchangeNames:
+  - bitstamp 
+  - bitso
+  - coins.ph
+  - btc markets
+  - mercado bitcoin
+  - bittrex
+
+#Known destination tags associated with ODL transactions
+exchangeODLTags:
+  - tag: 80025555
+    exchange: bitstamp
+
+  - tag: 22794384
+    exchange: bitso
+
+  - tag: 25370527
+    exchange: bitso
+
+  - tag: 25490962
+    exchange: bitso
+  
+  - tag: 47175592
+    exchange: bitso
+
+  - tag: 5
+    exchange: coins.ph
+
+  - tag: 967
+    exchange: coins.ph
+
+  - tag: 149411
+    exchange: coins.ph
+
+  - tag: 158068
+    exchange: coins.ph
+
+  - tag: 160728
+    exchange: coins.ph
+
+  - tag: 100004994
+    exchange: btc markets
